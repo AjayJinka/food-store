@@ -8,7 +8,11 @@ const ResCard = (props) => {
   const { id, name, avgRating, sla, cuisines, locality, cloudinaryImageId } =
     resData;
   return (
-    <div className="flex flex-col rounded-lg hover:shadow-2xl p-1">
+    <div
+      className="flex flex-col rounded-lg hover:shadow-2xl p-1"
+      id={id}
+      data-testid="resCard"
+    >
       <div>
         <img
           src={RESIMG_URL + cloudinaryImageId}
@@ -33,9 +37,7 @@ export const withPromoted = (ResCard) => {
   return (props) => {
     return (
       <div>
-        <label className="bg-black text-white rounded p-1 absolute">
-          Promoted
-        </label>
+        <div className="bg-black text-white rounded p-1 absolute">Promoted</div>
         <ResCard {...props} />
       </div>
     );

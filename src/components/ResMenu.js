@@ -9,7 +9,7 @@ const ResMenu = () => {
   const { resId } = useParams();
   const resInfo = useFetchData(RES_MENU_URL + resId);
   const [showItemIndex, setShowItemIndex] = useState(null);
-  console.log(resInfo, "resInfo");
+  //console.log(resInfo, "resInfo");
   if (resInfo == null) return <Shimmer />;
   const {
     name,

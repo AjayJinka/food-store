@@ -11,7 +11,10 @@ const ResMenuCategoryItem = (props) => {
     dispatch(addItem(item));
   };
   return (
-    <div className="grid grid-cols-5 gap-x-4 border-b border-gray-300 p-2">
+    <div
+      className="grid grid-cols-5 gap-x-4 border-b border-gray-300 p-2"
+      data-testid="foodItem"
+    >
       <div className="col-span-4">
         <div className="mb-2 font-bold">
           <div>{name}</div>

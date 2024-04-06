@@ -22,6 +22,7 @@ const Body = () => {
       const fetchedRestaurants =
         apiRes?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants;
+      //console.log(fetchedRestaurants, "fetchedRestaurants");
       setResList(fetchedRestaurants);
       setFilteredResList(fetchedRestaurants);
     }
@@ -32,7 +33,7 @@ const Body = () => {
       <h1>Looks like you are offline; Please check your internet connection</h1>
     );
 
-  console.log(resList, "resList");
+  //console.log(resList, "resList");
   if (!resList || resList.length === 0) {
     return <Shimmer />;
   }
@@ -47,6 +48,7 @@ const Body = () => {
               setSearchText(e.target.value);
             }}
             value={searchText}
+            data-testid="searchInput"
           ></input>
           <button
             className="bg-blue-300 rounded-lg px-2 py-1 font-bold hover:bg-blue-400 shadow-lg"
