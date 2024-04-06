@@ -21,13 +21,19 @@ const Cart = () => {
           Clear Cart🧹
         </button>
       </div>
-      {cartItems.map((item) => {
-        return (
-          <div key={item?.card?.info?.id} className="w-8/12 m-auto">
-            <ResMenuCategoryItem itemCard={item} />
-          </div>
-        );
-      })}
+      {cartItems.length === 0 ? (
+        <h1 className="text-center font-bold my-8">
+          Cart is Empty, Add items to the Cart!
+        </h1>
+      ) : (
+        cartItems.map((item) => {
+          return (
+            <div key={item?.card?.info?.id} className="w-8/12 m-auto">
+              <ResMenuCategoryItem itemCard={item} />
+            </div>
+          );
+        })
+      )}
     </div>
   );
 };

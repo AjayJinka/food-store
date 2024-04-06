@@ -48,4 +48,7 @@ it("Should load restarurant menu component", async () => {
   const clearCartBtn = screen.getByText("Clear Cart🧹");
   fireEvent.click(clearCartBtn);
   expect(screen.getAllByTestId("foodItem").length).toBe(14);
+  expect(
+    screen.getByText("Cart is Empty, Add items to the Cart!")
+  ).toBeInTheDocument();
 });
