@@ -17,7 +17,7 @@ const Header = () => {
     <div className="flex justify-between items-center shadow-md pr-4 bg-pink-100">
       <img src={LOGO_URL} alt="logo" className="w-16 h-16"></img>
       <div className="flex gap-x-4 items-center font-bold">
-        <div>Online Status: {onlineStatus ? "✅" : "🔴"}</div>
+        <div>Online Status text: {onlineStatus ? "✅" : "🔴"}</div>
         <div>
           <Link className="hover:bg-green-200 p-2 rounded-lg" to={"/"}>
             Home
