@@ -1,3 +1,3 @@
-# namaste-react
+# food-store
 
-namaste-react course
+- food ordering app

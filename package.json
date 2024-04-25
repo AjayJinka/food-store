@@ -1,7 +1,7 @@
 {
-  "name": "namaste-react",
+  "name": "food-store",
   "version": "1.0.0",
-  "description": "namaste react learning",
+  "description": "food ordering app",
   "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/AjayJinka/namaste-react.git)"
+    "url": "(https://github.com/AjayJinka/food-store.git)"
   },
   "keywords": [],
   "author": "Ajay Jinka",
